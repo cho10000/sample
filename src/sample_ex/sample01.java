@@ -9,6 +9,9 @@ public class sample01 {
         System.out.println("한국형 하나다");
         
         System.out.println("한국형 하나다");
+        System.out.println("한국형 하나다");
+        System.out.println("한국형 하나다");
+        System.out.println("한국형 하나다");
 	}
 
 }
