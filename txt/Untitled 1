@@ -1,0 +1,31 @@
+메뉴 얼
+자동 형변화  규칙
+byte -> short ->int -> long -> float -> double
+        char ->
+long num3 = (long)num3;
+int num = (int)num;
+        
+클래스  : 틀
+
+인스턴스 : 실체
+
+. 우라기 정의 하는 클래스의 이름도 int, double과 같은 자료형의 이름인가요? 사실 클래스르 정의
+하는 것은 자료형의 정의하는 것과 같다.
+
+
+생성되는 클래스 파일의 수
+ : 확장자가 .class인 클래스 파일은 저으이되는 클래스의 수만큼 생성된다.
+ 정의되는 클래스의 수와 생성되는 클래스의 수는 동일하다.
+ 
+ final int COLOR_RAINBOW = 7;
+             클래스내부   동일패키지   상속받은클래스   이외이 영역
+ public        ○           X         X           X    
+ default       ○           ○         X           X
+ private       ○           ○         ○           X
+ protected     ○           ○         ○           ○
+ 
+ public > protected  > default  > private
+ 
+ * 생성자도 private로 선언이 되며 클래스 내부에서만 호출이 가능하다.(외부에서의 인스턴스 생성을 허용하지 않겠다)
+    
+         

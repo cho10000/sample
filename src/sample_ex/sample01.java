@@ -1,5 +1,7 @@
 package sample_ex;
 
+import java.io.IOException;
+import java.io.InputStream;  // InputStream은 자바의 내장 클래스
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -15,7 +17,7 @@ public class sample01 {
 
     }
     
-	public static void main(String[] args) {
+	public static void main(String[] args)  throws IOException {
 		// TODO Auto-generated method stub
 
 		sample01 gugu = new sample01();
@@ -353,9 +355,18 @@ public class sample01 {
         for(String number: numbers) {
             System.out.println(number);
         }
+                
+        // InputStream InputStreamReader BufferedReader Scanner
         
+        InputStream in = System.in;
 
+        int int_a;
+        System.out.println("integer 입력해 주시기 바랍니다."); 
+        int_a = in.read();
 
+        System.out.println(int_a);
+        
+        
         System.out.println(CoffeeType.AMERICANO);  // AMERICANO 출력
         System.out.println(CoffeeType.ICE_AMERICANO);  // ICE_AMERICANO 출력
         System.out.println(CoffeeType.CAFE_LATTE);  // CAFE_LATTE 출력 
